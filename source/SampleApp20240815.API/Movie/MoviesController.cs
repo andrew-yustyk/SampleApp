@@ -124,7 +124,7 @@ public class MoviesController : ControllerBase
     }
 
     [NonAction]
-    private async Task<IActionResult> Catch(Func<Task<IActionResult>> action)
+    private async Task<IActionResult> Catch(Func<Task<IActionResult>> action, [CallerMemberName] string actionName = "Unknown")
     {
         try
         {
@@ -132,7 +132,7 @@ public class MoviesController : ControllerBase
         }
         catch (Exception e)
         {
-            _logger.LogError(e, "Error on MoviesController.Get action");
+            _logger.LogError(e, "Error on MoviesController {ActionName} action", actionName);
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
         }
     }
