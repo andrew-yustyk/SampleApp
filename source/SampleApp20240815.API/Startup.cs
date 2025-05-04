@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using SampleApp20240815.BL.Movies;
 using SampleApp20240815.DAL.Db;
 using SampleApp20240815.DAL.Movie;
@@ -38,13 +37,8 @@ public class Startup
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        app.UseHttpsRedirection();
-
-        if (!env.IsProduction())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseRouting();
         app.UseEndpoints(builder => builder.MapControllers());

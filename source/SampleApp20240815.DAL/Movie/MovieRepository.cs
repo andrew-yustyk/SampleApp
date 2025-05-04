@@ -35,6 +35,7 @@ public class MovieRepository : IMovieRepository
     {
         ArgumentNullException.ThrowIfNull(movie);
 
+        movie.Version = DateTimeOffset.UtcNow;
         var entry = Movies.Add(movie);
         await _context.SaveChangesAsync(ct);
 
@@ -45,6 +46,7 @@ public class MovieRepository : IMovieRepository
     {
         ArgumentNullException.ThrowIfNull(movie);
 
+        movie.Version = DateTimeOffset.UtcNow;
         var entry = Movies.Update(movie);
         await _context.SaveChangesAsync(ct);
 

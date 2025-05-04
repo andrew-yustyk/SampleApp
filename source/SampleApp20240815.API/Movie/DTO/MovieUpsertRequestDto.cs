@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
 namespace SampleApp20240815.API.Movie.DTO;
@@ -21,7 +20,6 @@ public class MovieUpsertRequestDto
 
         return new BL.Movies.Movie
         {
-            Version = DateTimeOffset.UtcNow,
             Title = dto.Title,
             Year = dto.Year,
         };

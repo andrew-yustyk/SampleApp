@@ -33,7 +33,6 @@ namespace SampleApp20240815.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset>("Version")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("datetimeoffset");
 
                     b.Property<int>("Year")
