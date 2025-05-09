@@ -47,7 +47,7 @@ public class MovieService : IMovieService
         Movie result;
 
         var existing = await _movieRepository.Get(movie.Id, ct);
-        if (existing  is null)
+        if (existing is null)
         {
             result = await _movieRepository.Create(movie, ct);
         }
