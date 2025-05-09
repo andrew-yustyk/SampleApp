@@ -13,8 +13,6 @@ public class MovieService : IMovieService
 
     public MovieService(IMovieRepository movieRepository, ILogger<MovieService> logger)
     {
-        ArgumentNullException.ThrowIfNull(nameof(movieRepository));
-        ArgumentNullException.ThrowIfNull(logger);
         _movieRepository = movieRepository;
         _logger = logger;
     }
@@ -33,17 +31,12 @@ public class MovieService : IMovieService
 
     public async Task<Movie> Create(Movie movie, CancellationToken ct = default)
     {
-        ArgumentNullException.ThrowIfNull(nameof(movie));
-
         var result = await _movieRepository.Create(movie, ct);
-
         return result;
     }
 
     public async Task<Movie> Upsert(Movie movie, CancellationToken ct = default)
     {
-        ArgumentNullException.ThrowIfNull(nameof(movie));
-
         Movie result;
 
         var existing = await _movieRepository.Get(movie.Id, ct);

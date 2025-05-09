@@ -1,9 +1,10 @@
 root = true
 
 [*]
-indent_style = space
 end_of_line = lf
 charset = utf-8
+indent_style = space
+indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
 
@@ -11,20 +12,4 @@ trim_trailing_whitespace = true
 indent_size = 2
 
 [*.{md,markdown}]
-indent_size = 4
 trim_trailing_whitespace = false
-
-[*.{xml,xmlx}]
-indent_size = 4
-
-[*.{sln,slnx}]
-indent_size = 4
-
-[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
-indent_size = 4
-
-[*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
-indent_size = 4
-
-[*.{cs,csx,vb,vbx}]
-indent_size = 4

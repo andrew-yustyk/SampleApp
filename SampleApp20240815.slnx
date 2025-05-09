@@ -7,8 +7,10 @@
         <File Path="Directory.Packages.props" />
     </Folder>
     <Project Path="source\SampleApp20240815.API\SampleApp20240815.API.csproj" Type="Classic C#" />
-    <Project Path="source\SampleApp20240815.CLI\SampleApp20240815.CLI.csproj" Type="Classic C#" />
+    <Project Path="source\SampleApp20240815.Benchmarks\SampleApp20240815.Benchmarks.csproj" Type="Classic C#" />
     <Project Path="source\SampleApp20240815.BL\SampleApp20240815.BL.csproj" Type="Classic C#" />
+    <Project Path="source\SampleApp20240815.CLI\SampleApp20240815.CLI.csproj" Type="Classic C#" />
     <Project Path="source\SampleApp20240815.DAL\SampleApp20240815.DAL.csproj" Type="Classic C#" />
-    <Project Path="source\SampleApp20240815.Tests.Unit\SampleApp20240815.Tests.Unit.csproj" Type="Classic C#" />
+    <Project Path="source\SampleApp20240815.Utils\SampleApp20240815.Utils.csproj" Type="Classic C#" />
+    <Project Path="tests\SampleApp20240815.Tests.Unit\SampleApp20240815.Tests.Unit.csproj" Type="Classic C#" />
 </Solution>

@@ -17,7 +17,6 @@ public class MovieRepository : IMovieRepository
 
     public MovieRepository(SampleAppDbContext dbContext)
     {
-        ArgumentNullException.ThrowIfNull(nameof(dbContext));
         _context = dbContext;
     }
 

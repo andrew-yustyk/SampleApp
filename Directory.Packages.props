@@ -1,11 +1,12 @@
 ﻿<Project>
     <ItemGroup>
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="[8.0.15, 8.1.0)" />
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="[8.0.15, 8.1.0)" />
-        <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="[8.0.3, 8.1.0)" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="[9.0.4, 9.1.0)" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="[9.0.4, 9.1.0)" />
+        <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="[9.0.4, 9.1.0)" />
     </ItemGroup>
 
     <ItemGroup>
+        <PackageVersion Include="BenchmarkDotNet" Version="[0.14.0, 1.0.0)" />
         <PackageVersion Include="Swashbuckle.AspNetCore" Version="[8.1.1, 8.2.0)" />
     </ItemGroup>
 
